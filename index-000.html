@@ -102,17 +102,49 @@ function MM_swapImage() { //v3.0
  </div> 
 </div>
  
- 
- 
  <div id="poto">
+ <!--大圖輪播-->
  <div id="myCarousel" class="carousel slide">
+   <!-- 轮播（Carousel）指标 -->
+   <ol class="carousel-indicators">
+     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
+     <li data-target="#myCarousel" data-slide-to="4"></li>
+   </ol>
+   <!-- 轮播（Carousel）项目 -->
    <div class="carousel-inner">
-	 <div id="A1">
-	   <iframe src="images-company-topimage.htm" width="1920" height="450" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe>
-	 </div>
+   
+     <div class="item active"><a href="compal3.html" target="_top"><img src="images/topimage/01.jpg" alt="First slide" width="1920" height="450" /></a>
+       <div class="carousel-caption"><font size="+2"><b>陳俊宏│火舞</b></font></div>
+     </div>
+     <div class="item"><a href="compal3.html" target="_top"><img src="images/topimage/02.jpg" width="1920" height="450" alt="Second slide" /></a>
+       <div class="carousel-caption"><font size="+2"><b>劉秋玲│瑞士處處是大景</b></font></div>
+     </div>
+     <div class="item"><a href="compal3.html" target="_top"><img src="images/topimage/03.jpg" width="1920" height="450" alt="Third slide" /></a>
+       <div class="carousel-caption"><font size="+2"><b>劉柏君│百萬夜景天空樹</b></font></div>
+     </div>
+     <div class="item"><a href="compal3.html" target="_top"><img src="images/topimage/04.jpg" width="1920" height="450" /></a>
+       <div class="carousel-caption"><font size="+2"><b>邱詩儒│黃河</b></font></div>
+     </div>
+     <div class="item"><a href="compal3.html" target="_top"><img src="images/topimage/05.jpg" width="1920" height="450" /></a>
+       <div class="carousel-caption"><font size="+2"><b>柯政佑│石碇千島湖</b></font></div>
+     </div>
+     
+   </div>
+   </div>
+   <script>
+   $(function(){
+        // 初始化轮播
+        $('.carousel').carousel({
+  interval: 3000
+})
+    });
+</script>
+ <!--大圖輪播結束-->
  </div>
- </div>
- </div>
+ 
 	 
  <div id="container">
 <!--
